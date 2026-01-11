@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #ffffff;
+  --color-bg-subtle: #f8fafc;
+  --color-bg-card: #ffffff;
+  --color-accent: #000000;
+  --color-accent-subtle: #4b5563;
+  --color-text-main: #000000;
+  --color-text-sub: #64748b;
+  --color-border-base: #e2e8f0;
+  --color-border-strong: #000000;
+}
+
+@layer base {
+  *, ::after, ::before, ::backdrop, ::file-selector-button {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Courier New', monospace;
+  background-color: var(--color-bg-main);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #cbd5e1;
+  color: #000000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+section {
+  padding: 100px 0;
+}
+
+@layer utilities {
+  /* Removed custom utilities */
+}
+
+/* Minimalist Utilities - Removed */
+
+.terminal-cursor {
+  /* Removed, replaced with inline animate-[blink...] */
+  display: none; /* Just ensuring it's gone from usage if any remains, but better to remove the block */
+}
+/* Actually removing the blocks entirely */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
