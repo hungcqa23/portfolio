@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   Terminal, Code2, Database, Globe, Cpu, GitCommitHorizontal, 
-  GitMerge, Server, Command, FileJson, FolderGit2, Monitor, 
+  Server, Command, FileJson, FolderGit2, Monitor, 
   Zap, Layout, Hash, Braces, Smartphone, Layers,
   Package, Cloud, Wifi, Settings, Key, Lock, Star, 
   FileText, Binary, Globe2, Network, HardDrive,
