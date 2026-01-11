@@ -27,7 +27,7 @@ export const Experience: React.FC = () => {
     <section 
       id="experience" 
       ref={sectionRef} 
-      className="py-24 border-t border-slate-100 flex justify-center sticky top-0 z-20 bg-white min-h-screen"
+      className="py-24 border-t border-slate-100 flex justify-center bg-white min-h-screen"
     >
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">

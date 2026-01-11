@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
   }, [displayText, isWaiting, currentRole]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center sticky top-0 z-0 bg-white">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-white">
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <span className="font-mono text-lg tracking-widest uppercase text-slate-500 mb-4 block">FullStack Software Engineer</span>
         
@@ -108,7 +108,7 @@ export const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 w-full overflow-x-hidden px-4 h-80 z-[1000] select-none flex items-end pb-32 pointer-events-none">
+      <div className="absolute bottom-0 left-0 right-0 w-full overflow-x-hidden px-4 h-48 z-[1000] select-none flex items-end pb-16 pointer-events-none">
         <ul className="flex justify-between items-center w-full">
           {floatingIcons.map((item, index) => (
             <li 

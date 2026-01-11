@@ -33,7 +33,7 @@ export const About: React.FC = () => {
     <section 
       id="about" 
       ref={sectionRef}
-      className="py-24 bg-slate-50 border-t border-slate-100 flex justify-center sticky top-0 z-10 min-h-screen"
+      className="pt-24 pb-24 bg-slate-50 border-t border-slate-100 flex justify-center"
     >
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
@@ -54,7 +54,8 @@ export const About: React.FC = () => {
           </div>
 
           {/* Right Column: Content */}
-          <div className={`lg:col-span-9 space-y-24 transition-all duration-1000 delay-300 ease-out ${
+          <div 
+            className={`lg:col-span-9 space-y-24 transition-all duration-1000 delay-300 ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'
           }`}>
             {/* Intro Section */}
@@ -66,7 +67,7 @@ export const About: React.FC = () => {
               
               <div className="space-y-6 text-slate-600 text-lg mb-10 leading-relaxed">
                 <p>
-                  I’m a developer passionate about crafting scalable, high-performance backend systems that blend robust engineering with clean architecture. My favorite work lies at the intersection of system design and optimization, creating architectures that not only perform well but are meticulously built for scalability and maintainability.
+                  I'm a developer passionate about crafting scalable, high-performance backend systems that blend robust engineering with clean architecture. My favorite work lies at the intersection of system design and optimization, creating architectures that not only perform well but are meticulously built for scalability and maintainability.
                 </p>
                 <p>
                   Currently, I'm a FullStack Software Engineer at TuTiMi Corporation, where I contribute to the creation and maintenance of scalable web applications, ensuring our platform meets high standards of performance and user experience.
@@ -75,14 +76,14 @@ export const About: React.FC = () => {
                   In the past, I've had the opportunity to develop software across a variety of settings — from advertising agencies and large corporations to start-ups and small digital product studios.
                 </p>
                 <p>
-                  In my spare time, I’m usually swimming, playing badminton, or exploring new technologies.
+                  In my spare time, I'm usually swimming, playing badminton, or exploring new technologies.
                 </p>
               </div>
 
               <div className="p-6 bg-white border border-slate-100 rounded-xl overflow-x-auto font-mono shadow-sm">
                 <div className="text-xs text-slate-300 mb-4 tracking-widest uppercase font-bold">// approach.ts</div>
                 <div className="text-sm space-y-2">
-                  <div><span className="text-black font-bold">const</span> approach = {'{' }</div>
+                  <div><span className="text-black font-bold">const</span> approach = {'{'}</div>
                   <div className="pl-6 text-slate-500">
                     <span className="text-black font-semibold">reliability</span>: "guaranteed",<br />
                     <span className="text-black font-semibold">performance</span>: "optimized",<br />

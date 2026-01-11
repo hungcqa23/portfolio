@@ -12,7 +12,7 @@ export const Route = createRootRoute({
       <>
         {!isStandalonePage && <Header />}
         <Outlet />
-        {!isStandalonePage && <Footer />}
+        {/* {!isStandalonePage && <Footer />} */}
         {import.meta.env.DEV && (
           <TanStackRouterDevtools position="bottom-right" />
         )}
