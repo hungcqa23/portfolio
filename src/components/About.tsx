@@ -33,7 +33,7 @@ export const About: React.FC = () => {
     <section 
       id="about" 
       ref={sectionRef}
-      className="min-h-screen flex flex-col justify-center bg-white border-t border-slate-100"
+      className="min-h-screen flex flex-col justify-center bg-white"
     >
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <div 
@@ -78,7 +78,7 @@ export const About: React.FC = () => {
 
           {/* Skills Section - Stacked below Intro */}
           <div>
-            <h3 className="text-[10px] uppercase font-black tracking-widest text-black mb-6 border-b border-slate-100 pb-2">
+            <h3 className="text-[10px] uppercase font-black tracking-widest text-black mb-6">
               Technical Expertise
             </h3>
             

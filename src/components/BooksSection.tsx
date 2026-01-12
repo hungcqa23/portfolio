@@ -30,7 +30,7 @@ export const BooksSection: React.FC = () => {
     <section 
       id="books" 
       ref={sectionRef} 
-      className="min-h-screen flex flex-col justify-center border-t border-slate-100 bg-white"
+      className="min-h-screen flex flex-col justify-center bg-white"
     >
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <div className={`transition-all duration-1000 delay-300 ease-out ${
@@ -43,11 +43,11 @@ export const BooksSection: React.FC = () => {
             A curated collection of technical books that have profoundly influenced my engineering approach and architectural decisions.
           </p>
           
-          <div className="space-y-0 border-t border-slate-200">
+          <div className="space-y-0">
             {featuredBooks.map((book) => (
               <article
                 key={book.id}
-                className="group py-6 border-b border-slate-200 flex flex-col md:flex-row gap-6 md:gap-10 transition-colors hover:bg-slate-50/50 -mx-6 px-6 md:-mx-0 md:px-0"
+                className="group py-6 flex flex-col md:flex-row gap-6 md:gap-10 transition-colors hover:bg-slate-50/50 -mx-6 px-6 md:-mx-0 md:px-0"
               >
                 <div className="flex-1">
                   <div className="flex items-baseline justify-between gap-4 mb-1">

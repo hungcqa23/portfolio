@@ -4,7 +4,7 @@ import { personalInfo } from '../data/portfolio';
 
 export const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="py-24 border-t border-slate-100 bg-slate-50 flex justify-center">
+    <footer id="contact" className="py-24 bg-slate-50 flex justify-center">
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto">
 

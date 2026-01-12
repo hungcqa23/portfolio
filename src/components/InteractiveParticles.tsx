@@ -98,7 +98,7 @@ const InteractiveParticles = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="absolute inset-0 w-full h-full pointer-events-none z-[1]" 
+        className="absolute inset-0 w-full h-full pointer-events-none z-1" 
       />
     );
   }

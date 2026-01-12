@@ -27,7 +27,7 @@ export const Experience: React.FC = () => {
     <section 
       id="experience" 
       ref={sectionRef} 
-      className="min-h-screen flex flex-col justify-center bg-white border-t border-slate-100"
+      className="min-h-screen flex flex-col justify-center bg-white"
     >
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <div className={`relative transition-all duration-1000 delay-300 ease-out ${
