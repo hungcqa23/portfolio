@@ -33,21 +33,21 @@ export const About: React.FC = () => {
     <section 
       id="about" 
       ref={sectionRef}
-      className="min-h-screen flex flex-col justify-center bg-slate-50 border-t border-slate-100"
+      className="min-h-screen flex flex-col justify-center bg-white border-t border-slate-100"
     >
       <div className="w-full max-w-[1100px] mx-auto px-6">
         <div 
-          className={`space-y-24 transition-all duration-1000 delay-300 ease-out ${
+          className={`space-y-16 transition-all duration-1000 delay-300 ease-out ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'
         }`}>
           {/* Intro Section */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-black text-black mb-8 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-black mb-6 leading-tight">
               Crafting robust <br />
               <span className="text-slate-400">digital systems.</span>
             </h2>
             
-            <div className="space-y-6 text-slate-600 text-lg mb-10 leading-relaxed">
+            <div className="space-y-4 text-slate-600 text-base mb-8 leading-relaxed">
               <p>
                 I'm a developer passionate about crafting scalable, high-performance backend systems that blend robust engineering with clean architecture. My favorite work lies at the intersection of system design and optimization, creating architectures that not only perform well but are meticulously built for scalability and maintainability.
               </p>
@@ -62,9 +62,9 @@ export const About: React.FC = () => {
               </p>
             </div>
 
-            <div className="p-6 bg-white border border-slate-100 rounded-xl overflow-x-auto font-mono shadow-sm">
-              <div className="text-xs text-slate-300 mb-4 tracking-widest uppercase font-bold">// approach.ts</div>
-              <div className="text-sm space-y-2">
+            <div className="p-5 bg-white border border-slate-100 rounded-xl overflow-x-auto font-mono shadow-sm">
+              <div className="text-[10px] text-slate-300 mb-3 tracking-widest uppercase font-bold">// approach.ts</div>
+              <div className="text-xs space-y-1.5">
                 <div><span className="text-black font-bold">const</span> approach = {'{'}</div>
                 <div className="pl-6 text-slate-500">
                   <span className="text-black font-semibold">reliability</span>: "guaranteed",<br />
@@ -78,19 +78,19 @@ export const About: React.FC = () => {
 
           {/* Skills Section - Stacked below Intro */}
           <div>
-            <h3 className="text-xs uppercase font-black tracking-widest text-black mb-8 border-b border-slate-100 pb-2">
+            <h3 className="text-[10px] uppercase font-black tracking-widest text-black mb-6 border-b border-slate-100 pb-2">
               Technical Expertise
             </h3>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {categories.map((category) => (
                 <div key={category.name} className="group">
-                  <h4 className="text-black font-bold mb-4 text-sm uppercase tracking-wider">{category.name}</h4>
-                  <div className="flex flex-wrap gap-2">
+                  <h4 className="text-black font-bold mb-3 text-xs uppercase tracking-wider">{category.name}</h4>
+                  <div className="flex flex-wrap gap-1.5">
                     {category.skills.map((skill) => (
                       <span 
                         key={skill.name} 
-                        className="px-3 py-1 bg-slate-100 text-xs font-bold uppercase tracking-wider text-slate-500 rounded hover:bg-black hover:text-white transition-colors cursor-default"
+                        className="px-2.5 py-0.5 bg-slate-100 text-[10px] font-bold uppercase tracking-wider text-slate-500 rounded hover:bg-black hover:text-white transition-colors cursor-default"
                       >
                         {skill.name}
                       </span>

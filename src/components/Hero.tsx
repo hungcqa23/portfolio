@@ -60,34 +60,28 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-white">
-      <div className="w-full max-w-275 mx-auto px-6 pb-40">
-        <span className="font-mono text-lg tracking-widest uppercase text-slate-500 mb-4 block">FullStack Software Engineer</span>
+      <div className="w-full max-w-275 mx-auto px-6 pb-32">
+        <span className="font-mono text-sm tracking-widest uppercase text-slate-500 mb-3 block">FullStack Software Engineer</span>
         
-        <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter text-black">
+        <h1 className="text-5xl md:text-7xl font-black mb-5 tracking-tighter text-black">
           An Hung . Dev
         </h1>
         
-        <div className="flex items-center gap-3 text-2xl md:text-5xl font-medium text-slate-400 mb-10">
+        <div className="flex items-center gap-2 text-xl md:text-4xl font-medium text-slate-400 mb-8">
           <span>{displayText}</span>
-          <span className="inline-block w-2 h-[1.2em] bg-black ml-1 align-middle animate-[blink_1s_step-end_infinite]" />
+          <span className="inline-block w-1.5 h-[1.2em] bg-black ml-1 align-middle animate-[blink_1s_step-end_infinite]" />
         </div>
         
-        <p className="max-w-2xl text-slate-500 text-xl mb-12 leading-relaxed h-15">
+        <p className="max-w-xl text-slate-500 text-base mb-10 leading-relaxed h-12">
           Building scalable applications and robust APIs, with a heavy focus on backend engineering, performance optimization, and distributed architectures.
         </p>
         
         <div className="flex flex-wrap gap-4">
           <a
             href="#projects"
-            className="bg-black text-white px-6 py-3 font-medium transition-all duration-200 inline-flex items-center gap-2 hover:bg-[#333]"
+            className="bg-black text-white px-8 py-2.5 text-sm font-medium transition-all duration-200 inline-flex items-center gap-2 hover:bg-[#333]"
           >
             View Projects
-          </a>
-          <a
-            href="#contact"
-            className="border border-black text-black px-6 py-3 font-medium transition-all duration-200 inline-flex items-center gap-2 hover:bg-slate-50"
-          >
-            Contact
           </a>
         </div>
       </div>
