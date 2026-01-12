@@ -18,7 +18,6 @@ export const Header: React.FC = () => {
     { to: '/', hash: 'experience', label: 'Experience' },
     { to: '/', hash: 'projects', label: 'Projects' },
     { to: '/', hash: 'books', label: 'Books' },
-    { to: '/', hash: 'contact', label: 'Contact' },
   ];
 
   return (
