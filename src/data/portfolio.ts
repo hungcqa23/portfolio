@@ -21,6 +21,7 @@ export interface Experience {
   title: string;
   period: string;
   description: string;
+  highlights: string[];
   technologies: string[];
 }
 
@@ -104,35 +105,50 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     id: 1,
-    company: 'TuTiMi Corporation',
-    title: 'Software Engineering Manager',
-    period: 'Sep 2025 — Present',
-    description: 'Leading engineering at TuTiMi’s fast-growing F&B tech ecosystem. Driving technical strategy, architecture decisions, and team execution across ERP, POS, inventory, and operations platforms. Implementing AI-assisted workflows to improve efficiency.',
-    technologies: ['Technical Leadership', 'System Architecture', 'AI Workflows', 'ERP/POS', 'Full Stack'],
+    company: 'TUTIMI',
+    title: 'Full Stack Developer',
+    period: '03/2025 — Present',
+    description: 'TuTiMi is an FnB company using technology to optimize operations and enable data-driven decisions across its food and beverage ecosystem.',
+    highlights: [
+      'Spearheaded the end-to-end development of the company\'s comprehensive project suite (ERP, POS, HRM, CRM, E-Commerce, E-Learning), scaling the digital ecosystem to support 50+ store locations and 1000+ active employees.',
+      'Identified sequential bottlenecks in financial data processing and redesigned using parallel task execution and concurrency-safe aggregation, achieving 24x+ speedup without compromising data accuracy.',
+      'Collaborated directly with the CFO to architect a centralized internal synchronization application, automating multi-platform data reconciliation and slashing manual accounting time by 70%.',
+      'Built and mentored a high-performing engineering team (4+ interns converted to full-time), establishing strong coding standards, fostering Agile (Scrum/Kanban) culture, and translating technical decisions for stakeholders in business terms.',
+      'Established standardized engineering practices based on SOLID principles and DDD, implementing CI/CD pipelines and TDD that reduced production bugs by 30%.',
+      'Implemented full-stack observability using Sentry and Posthog, enabling continuous error monitoring and user behavior analysis which reduced average debugging time by 40%.',
+      'Designed and implemented event-driven microservices with fan-out patterns using AWS (SQS, SNS, Lambda, API Gateway, RDS, S3, CloudWatch), ensuring high availability and cost-efficiency.',
+    ],
+    technologies: ['Node.js', 'NestJS', 'TypeScript', 'React', 'Astro', 'Next.js', 'Python', 'Django', 'PostgreSQL', 'MySQL', 'Redis', 'AWS', 'Jest'],
   },
   {
     id: 2,
-    company: 'XGPT Enterprise',
-    title: 'Full Stack Engineer',
-    period: 'Mar 2025 — May 2025',
-    description: 'Freelance work building a scalable backend architecture for an online learning platform. Utilized NestJS, RabbitMQ, and microservices to implement asynchronous workflows for course enrollment and content delivery.',
-    technologies: ['NestJS', 'RabbitMQ', 'Microservices', 'Distributed Systems', 'Backend Architecture'],
+    company: 'XGPT Enterprise - Private AI',
+    title: 'Backend Developer',
+    period: '09/2024 — 04/2025',
+    description: 'An AI-powered online learning startup delivering personalized education through intelligent content recommendation, adaptive learning paths, and data-driven student insights.',
+    highlights: [
+      'Engineered scalable microservices and RESTful APIs using Java and Node.js, supporting complex AI-driven recruitment workflows and high-volume data ingestion.',
+      'Designed and optimized complex graph data models using Neo4j for intelligent candidate matching, alongside PostgreSQL and MongoDB for hybrid structured/unstructured data needs.',
+      'Architected a resilient cloud infrastructure on AWS (EC2, S3, SES), implementing optimized Redis caching layers that ensured sub-second response times for critical search features.',
+      'Optimized asynchronous communication by integrating RabbitMQ and Google APIs, managing high-throughput notification pipelines and cross-service data synchronization.',
+    ],
+    technologies: ['Node.js', 'NestJS', 'Java', 'Neo4j', 'PostgreSQL', 'MySQL', 'MongoDB', 'RabbitMQ', 'AWS', 'Redis'],
   },
   {
     id: 3,
-    company: 'Accessed',
-    title: 'Back End Developer',
-    period: 'Dec 2024 — Mar 2025',
-    description: 'Worked in a fast-paced startup environment building reliable, data-driven systems. Gained hands-on experience with microservices, databases (PostgreSQL, MongoDB, Neo4j), and AWS infrastructure.',
-    technologies: ['Microservices', 'PostgreSQL', 'MongoDB', 'Neo4j', 'AWS'],
-  },
-  {
-    id: 4,
-    company: 'TiSoHa Software Solutions',
+    company: 'TISOHA SOFTWARE SOLUTIONS',
     title: 'Full Stack Engineer',
-    period: 'May 2024 — Dec 2024',
-    description: 'Focused on improving front-end fundamentals, SEO, and internationalization. Delivered quality software in an outsourcing environment using modern frameworks like React and Next.js.',
-    technologies: ['React', 'Next.js', 'Frontend Optimization', 'SEO', 'Outsourcing'],
+    period: '05/2024 — 09/2024',
+    description: 'Developed scalable solutions for Tico (a multi-tenant headless commerce engine) and IYYARA (a global Halal verification platform) serving international markets.',
+    highlights: [
+      'Led a large-scale backend migration from Express to NestJS, establishing a microservices-based enterprise-grade architecture with Dependency Injection, centralized error handling, and structured logging.',
+      'Architected high-concurrency solutions including asynchronous request batching and multi-level Redis caching, successfully slashing API latency by 50% and significantly increasing database throughput.',
+      'Engineered an automated i18n (Internationalization) engine and optimized server-side rendering (SSR) with Next.js, improving search engine indexing and simplifying localization for 5+ languages.',
+      'Integrated Stripe for multi-currency payments and leveraged WebSockets for real-time communication modules, ensuring secure and low-latency financial transactions.',
+      'Standardized DevOps workflows using Docker, NGINX, and GitLab CI/CD, automating multi-environment deployments and ensuring high availability via robust SSL/DNS management.',
+      'Collaborated with international clients to gather technical requirements, proposed scalable architectural solutions, and ensured alignment between implementation and business objectives.',
+    ],
+    technologies: ['Node.js', 'NestJS', 'React', 'Next.js', 'Python', 'Django', 'Prisma', 'PostgreSQL', 'MySQL', 'Redis', 'Docker', 'AWS'],
   },
 ];
 

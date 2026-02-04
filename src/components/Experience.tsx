@@ -57,6 +57,16 @@ export const Experience: React.FC = () => {
                   <p className="text-slate-500 text-base leading-relaxed mb-4">
                     {exp.description}
                   </p>
+
+                  {exp.highlights && exp.highlights.length > 0 && (
+                    <ul className="list-disc list-outside ml-4 mb-4 space-y-1.5">
+                      {exp.highlights.map((highlight, index) => (
+                        <li key={index} className="text-slate-500 text-sm leading-relaxed">
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                   
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech) => (
